@@ -12,129 +12,202 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 *{margin:0;padding:0}
+
 body{font-family:Arial;
     font-size:14px;line-height:20px}
-a{text-decoration:none;color:#000;}
+
+    a{text-decoration:none;color:#000;}
 a:hover{text-decoration:none}
+
 input[type=text],input[type=password],input[type=submit],textarea{border:1px solid #ddd;padding:5px;outline:0;}
+
 h1,h2,h3,h4,h5,h6{font-weight:normal;margin:0 0 15px;font-family: 'Oswald', sans-serif;}
+
 h2 {font-size:25px;line-height:30px}
+
 img{max-width:100%;height:auto;border:none}
 
 .alignleft{float:left;margin-right:10px}	
+
 .aligncenter{display:block;margin:10px auto}	
+
 .alignright{float:right;margin-left:10px}	
 
 .floatleft{float:left}
+
 .floatright{float:right}
 
 .wrapper{width:1020px;display:block;margin:0 auto}
+
 .clearfix{overflow:hidden}
+
 ul,ol{margin:0;padding:0;list-style:none;}
 
 #selectnav1{display:none;}
 /* home page style */
-#header_area{background: url("images/header_bg.png") repeat-x scroll 0 0 #000;}
-#content_area{background: url("images/body_top_bg.png") repeat-x scroll center top #fff;
-padding-top: 25px;}
-#footer_top_area{background: none repeat scroll 0 0 #171716;
-margin-top: 25px;
-padding: 20px 0;
-border-top: 5px solid #FFD500;}
-#footer_bottom_area{padding:15px 0px;background:#222;}
+
+#header_area{
+    background: url("images/header_bg.png") repeat-x scroll 0 0 #000;
+}
+
+#content_area{
+    background: url("images/body_top_bg.png") repeat-x scroll center top #fff;
+    padding-top: 25px;
+}
+
+#footer_top_area{
+    background: none repeat scroll 0 0 #171716;
+    margin-top: 25px;
+    padding: 20px 0;
+    border-top: 5px solid #FFD500;
+}
+
+#footer_bottom_area{
+    padding:15px 0px;
+    background:#222;
+}
+
 .header_top{
     padding: 15px 0;
 }
 
 .logo a h1{
-color: #fff;
-font-family: oswald;
-font-size: 30px;
-font-weight: bold;
-line-height: 40px;
-text-transform: uppercase;}
+    color: #fff;
+    font-family: oswald;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: uppercase;
+}
 
-.logo a h1 span{color: #ffd500;}
+.logo a h1 span{
+    color: #ffd500;
+}
 
-.search{background: none repeat scroll 0 0 #2c2c2b;
-border: 1px solid #595957;
-padding: 5px;}
+.search{
+    background: none repeat scroll 0 0 #2c2c2b;
+    border: 1px solid #595957;
+    padding: 5px;
+}
 
-.search input[type="text"]{background: none;
-border: none;
-outline: 0;
-color: #999;
-width: 200px;}
+.search input[type="text"]{
+    background: none;
+    border: none;
+    outline: 0;
+    color: #999;
+    width: 200px;
+}
 
-.search input[type="submit"]{-moz-border-bottom-colors: none;
--moz-border-left-colors: none;
--moz-border-right-colors: none;
--moz-border-top-colors: none;
-background: url("images/search.png") no-repeat scroll 5px 0px rgba(0, 0, 0, 0);
-border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #595957;
-border-image: none;
-border-style: none none none solid;
-border-width: medium medium medium 1px;
-cursor: pointer;
-height: 22px;
-padding-left: 5px;
-text-indent: -99999px;
-width: 33px;}
+.search input[type="submit"]{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("images/search.png") no-repeat scroll 5px 0px rgba(0, 0, 0, 0);
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #595957;
+    border-image: none;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    cursor: pointer;
+    height: 22px;
+    padding-left: 5px;
+    text-indent: -99999px;
+    width: 33px;
+}
 
-.header_bottom{background: none repeat scroll 0 0 #ffd500;
-min-height: 30px;
-padding: 10px;}
+.header_bottom{
+    background: none repeat scroll 0 0 #ffd500;
+    min-height: 30px;
+    padding: 10px;
+}
 /* dropdown menu*/
 
-.header_bottom ul{list-style: none outside none;
-margin: 0;
-padding: 0;}
+.header_bottom ul{
+    list-style: none;
+    padding: 20;
+    justify-content: space-evenly;
+    display: flex;
+}
 
-.header_bottom ul li{float: left;position:relative;}
+.header_bottom ul li{
+    float: left;
+    position:relative;
+}
 
-.header_bottom ul li a{display: block;
-font-family: oswald;
-font-size: 15px;
-padding: 5px 15px;}
+.header_bottom ul li a{
+    display: block;
+    font-family: oswald;
+    font-size: 15px;
+    padding: 5px 15px;
+}
 
-.header_bottom ul li a:hover{background:#f5f5f5 url(images/menu_item.png) no-repeat scroll left center;
--webkit-transition: background 300ms ease-in;
--moz-transition: background 300ms ease-in;
--ms-transition: background 300ms ease-in;
--o-transition: background 300ms ease-in;
-transition: background 300ms ease-in;}
+.header_bottom ul li a:hover{
+    background:#050505 url(images/menu_item.png) no-repeat scroll left center;
+    color: white;
+    -webkit-transition: background 300ms ease-in;
+    -moz-transition: background 300ms ease-in;
+    -ms-transition: background 300ms ease-in;
+    -o-transition: background 300ms ease-in;
+    transition: background 300ms ease-in;
+}
 /* dropdown menu 2nd level*/
-#dropdown{background: url("images/down.png") no-repeat scroll right 8px rgba(0, 0, 0, 0);
-padding-right: 2px;}
+#dropdown{
+    background: url("images/down.png") no-repeat scroll right 8px rgba(0, 0, 0, 0);
+    padding-right: 2px;
+}
 
-.header_bottom ul li ul{background: none repeat scroll 0 0 #FFD500;
-left: -99999px;
-position: absolute;
-z-index: 1000;
-transition: all .3s ease 0s;-moz-transition: all .3s ease 0s;-webkit-transition: all .3s ease 0s;-o-transition: all .3s ease 0s;-ms-transition: all .3s ease 0s;}
+.header_bottom ul li ul{
+    background: none repeat scroll 0 0 #FFD500;
+    left: -99999px;
+    position: absolute;
+    z-index: 1000;
+    transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    -ms-transition: all .3s ease 0s;
+}
 
-.header_bottom ul li:hover ul{left:0px;top:30px}
+.header_bottom ul li:hover ul{
+    left:0px;top:30px
+}
 
-.header_bottom ul li ul li{width:200px;border-bottom:1px solid #ddd}
+.header_bottom ul li ul li{
+    width:200px;
+    border-bottom:1px solid #ddd
+}
 
-.header_bottom ul li ul li:last-child{border-bottom:0px;}
+.header_bottom ul li ul li:last-child{
+    border-bottom:0px;
+}
 
-.header_bottom ul li ul li a{padding:10px;}
+.header_bottom ul li ul li a{
+    padding:10px;
+}
 
-.header_bottom ul ul li a:hover{background:#f5f5f5 url(images/menu_item.png) no-repeat scroll left center;
--webkit-transition: background 300ms ease-in;
--moz-transition: background 300ms ease-in;
--ms-transition: background 300ms ease-in;
--o-transition: background 300ms ease-in;
-transition: background 300ms ease-in;
-padding-left:15px;
-transition: all .3s ease 0s;-moz-transition: all .3s ease 0s;-webkit-transition: all .3s ease 0s;-o-transition: all .3s ease 0s;-ms-transition: all .3s ease 0s;}
+.header_bottom ul ul li a:hover{
+    background:#f5f5f5 url(images/menu_item.png) no-repeat scroll left center;
+    -webkit-transition: background 300ms ease-in;
+    -moz-transition: background 300ms ease-in;
+    -ms-transition: background 300ms ease-in;
+    -o-transition: background 300ms ease-in;
+    transition: background 300ms ease-in;
+    padding-left:15px;
+    transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    -ms-transition: all .3s ease 0s;
+}
 
-.main_content{width: 690px;
-margin-right: 10px;}
+.main_content{
+    width: 690px;
+    margin-right: 10px;
+}
 
-.slider{background: url("images/slider_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-margin-bottom: 35px;
+.slider{
+    background: url("images/slider_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-bottom: 35px;
 padding: 5px;}
 
 .content_title {background: url("images/latest_post_bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -157,8 +230,8 @@ border-bottom: 3px solid #E7E7E7;}
 margin-right: 10px;
 padding: 5px;}
 
-.post_date .date{border: 1px solid #ddd;
-padding: 10px;
+.post_date .date{
+padding: 0px;
 text-align: center;}
 
 .post_date h3{font-size: 36px;
@@ -549,4 +622,7 @@ font-size: 18px;
 padding: 10px 40px;
 font-family: oswald;}
 
-.contact_us form input.wpcf7-submit:hover{background:#FFD500;color:#000;}
+.contact_us form input.wpcf7-submit:hover{
+    background:#FFD500;color:#000;
+}
+
